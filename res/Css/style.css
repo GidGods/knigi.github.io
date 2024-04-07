@@ -1,0 +1,564 @@
+@font-face {
+	font-family: 'FontName'; 
+	src: url(../font/ofont.ru_Unbounded.ttf); 
+}
+* {
+    font-family: 'FontName';
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #02080f;
+}
+/*header*/
+.header{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+}
+.Title{
+    z-index: 1;
+    position: absolute;
+    margin-top: -35px;
+    left: 70px;
+}
+.Title_item{
+    z-index: 1;
+    color: white;
+    font-size: 50px;
+}
+.image{
+    position:relative;
+    z-index: -1;
+}
+.image_item{
+    width: 100%;
+    height: 50%;
+    filter: brightness(70%);
+}
+.text-slogan{
+    z-index: 1;
+    top: 50%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+}
+.text_slogan{
+    z-index: 1;
+    top: 50%;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+/*end header*/
+
+/*menu*/
+ul {
+    z-index: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 40%;
+    margin-top: 20px;
+}
+.Menu_1 > li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a {
+    color: white;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    outline: none;
+    transition: .5s linear;
+}
+.Menu_1 ul a {
+    color: white;
+}
+.login > li {
+    padding: 0%;
+    margin-left: 80%;
+}
+div > p {
+    color:rgb(248, 248, 248)
+}
+div > p {
+    text-align: center;
+}
+.spisok > li{
+    border: 10px;
+    border-color: dimgray;
+    background-color: darkgray;
+    border-radius: 5px;
+    height: 40%;
+    width: 40%;
+}
+/*end menu*/
+
+.background-image-item {
+    z-index: -2;
+    width: 100%;
+    filter: brightness(40%);
+}
+/*container*/
+.container{
+    margin: 0;
+    padding: 15px;
+    background-color: #02080f;
+}
+/*end container*/
+
+/*About_us*/
+.About_us_item{
+    color: white;
+    font-size: 25px;
+}
+.About_us_item_1{
+    color: white;
+    font-size: 15px;
+}
+.About_us_item_2{
+    color: white;
+    font-size: 15px;
+}
+/*End about_us*/
+
+/*Pay method*/
+.Pay_method_item{
+    color: white;
+    font-size: 25px;
+}
+.Pay_method_item_1{
+    color: white;
+    font-size: 15px;
+}
+/*End pay method*/
+
+/*Block_1*/
+.block_1 {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.corner-box-6 {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    padding: 55px;
+    margin: 10px;
+    min-height: 160px;
+    border: 2px solid rgb(255, 172, 244);
+}
+.corner-ribbon-6 {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+}
+.corner-ribbon-6::before, .corner-ribbon-6::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid #2980b9;
+}
+.corner-ribbon-6 span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 15px 0;
+    background-color: violet;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    text-align: center;
+}
+.corner-ribbon-6-top-left {
+    top: -10px;
+    left: -10px;
+}
+.corner-ribbon-6-top-left::before, .corner-ribbon-6-top-left::after {
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+.corner-ribbon-6-top-left::before {
+    top: 0;
+    right: 0;
+}
+.corner-ribbon-6-top-left::after {
+    left: 0;
+    bottom: 0;
+}
+.corner-ribbon-6-top-left span {
+    right: -25px;
+    top: 30px;
+    transform: rotate(-45deg);
+}
+.corner-ribbon-6-top-right {
+    top: -10px;
+    right: -10px;
+}
+.corner-ribbon-6-top-right::before, .corner-ribbon-6-top-right::after {
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+.corner-ribbon-6-top-right::before {
+    top: 0;
+    left: 0;
+}
+.corner-ribbon-6-top-right::after {
+    right: 0;
+    bottom: 0;
+}
+.corner-ribbon-6-top-right span {
+    left: -25px;
+    top: 30px;
+    transform: rotate(45deg);
+}
+/*End block_1*/
+
+/*Delively method*/
+.Delivery_method_item{
+    color: white;
+    font-size: 25px;
+}
+.Delivery_method_item_1{
+    color: white;
+    font-size: 15px;
+}
+/*End delively method*/
+
+/*Begin design form*/
+.box{
+    width: 100%;
+    padding: 20px;
+    margin-top: 25px;
+    justify-content: center;
+    border-radius: 10px; 
+    box-sizing: border-box;
+}
+.Question {
+    font-size: 20px;
+    color: white;
+}
+.Ask {
+    color: white;
+    font-size: 20px;
+    
+}
+.form-label {
+    color: white;
+    text-align: left;
+}
+.form-control{
+    width: 100%;
+    border: 0;
+    font-size: 15px;
+}
+.form-border{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#exampleFormControlInput1 {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+}
+#exampleFormControlTextarea1{
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+}
+.write_form{
+    color: white;
+    font-size: 20px;
+}
+.mb-3 {
+    margin: 10px;
+    text-align: left;
+    justify-content: left;
+}
+.form-border {
+    padding: 20px;
+    border: 2px solid rgb(255, 172, 244);
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 2px rgb(255, 145, 232);
+    
+}
+/*End design form*/
+
+/*design button*/
+.button {
+    width: 110px;
+    height: 40px;
+    border: 2px solid rgb(255, 172, 244);
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    background-color: #02080f;
+}
+.button:focus {
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px 2px rgb(255, 172, 244);
+}
+/*design button*/ 
+
+/*Design timer*/
+body {
+    max-width: 1440px;
+    margin: auto;
+}
+.timer-text-1{
+    color: white;
+    font-size: 30px;
+}
+.timer__items {
+    padding: 10px;
+    border: 5px solid rgb(255, 172, 244);
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 2px rgb(255, 145, 244);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    font-size: 48px;
+}
+.timer__item {
+    color: white;
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
+.timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+}
+/*End design timer*/
+
+/*Begin block Registration of goods at a discount*/
+.Product{
+    padding: 20px;
+}
+.Product-text{
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+.item{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: space-evenly;
+}
+.shop-item{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgb(255, 172, 244);
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 2px rgb(255, 145, 244);
+    padding: 10px;
+    border-radius: 20px;
+    width: 250px;
+    height: 570px;
+}
+.item-title{
+    font-size: 15px;
+    color: white;
+}
+.sale{
+    display: flex;
+    flex-direction: row;
+}
+.old-price{
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 15px;
+}
+.old-price-1{
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 15px;
+}
+.sale-text{
+    margin-top: 5px;
+    margin-left: 20px;
+    background-color: red;
+    color:yellow;
+    width: 90px;
+    font-size: 15px;
+}
+.price-or-sale{
+    color: rgb(255, 172, 244);
+    font-size: 20px;
+}
+.item-1{
+    border: 2px solid white;
+    border-radius: 10px;
+}
+/*End block Registration of goods at a discount*/
+footer {
+    background-color: #000000;
+    width: 100%;
+    position: relative;
+    margin-bottom: -50px;
+}
+.Contacts {
+    text-align: center;
+    font-size: 20px;
+    color:white;
+}
+.Phone {
+    margin-left: 40px;
+    font-size: 15px;
+    color:white;
+}
+.email {
+    margin-left: 40px;
+    font-size: 15px;
+    color:white;
+}
+.adress{
+    margin-left: 40px;
+    font-size: 15px;
+    color:white;
+}
+.text {
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+/*End design footer*/
+
+/*Begin carousel*/
+#carousel-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+.carousel-header {
+    font-family: "Roboto-Medium", sans-serif;
+    text-transform: uppercase;
+    padding-top: 80px;
+    margin-bottom: 0;
+}
+
+#carousel {
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#carousel-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+}
+
+#carousel-nav img {
+    padding: 16px 64px 16px 64px;
+    opacity: 0.5;
+    transition: ease-in-out 0.25s;
+}
+
+#carousel-nav img:hover {
+    opacity: 1;
+}
+
+.carousel-block {
+    position: relative;
+}
+#carousel-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+}
+#carousel-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+}
+#carousel-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+}
+[id^="carousel-"] {
+    transition: opacity 0.5s, visibility 0.5s;
+}
+#left-side>img {
+    z-index: 4;
+    width: 308px;
+    top: 0px;
+    position: absolute;
+    animation: left-anim 3s 1;
+}
+
+#center-side>img {
+    width: 80%;
+    animation: center-anim 3s 1;
+}
+
+#right-side>img {
+    z-index: 4;
+    width: 308px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    animation: right-anim 3s 1;
+}
+.advantages-show {
+    background-position: center center;
+    background-size: cover;
+    height: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+.carousel-image{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), black);
+    filter: brightness(40%);
+}
+/*End carousel*/
